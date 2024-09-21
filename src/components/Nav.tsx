@@ -15,6 +15,7 @@ export function Nav({ children }: { children: ReactNode }) {
 
 export function NavLink(props: Omit<ComponentProps<typeof Link>, "className">) {
   const pathname = usePathname();
+
   return (
     <Link
       {...props}
